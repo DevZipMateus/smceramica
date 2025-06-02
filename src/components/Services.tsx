@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Package, Settings, Wrench, ArrowRight, CheckCircle, TrendingDown, Clock, Award, Scissors, DollarSign } from 'lucide-react';
+import { Package, Settings, Wrench, ArrowRight, CheckCircle, TrendingDown, Clock, Award, Scissors, DollarSign, Zap, Target } from 'lucide-react';
 
 const services = [
   {
@@ -34,8 +34,8 @@ const benefits = [
     color: 'text-green-600'
   },
   {
-    title: 'Longa durabilidade dos abrasivos',
-    description: 'Produtos que resistem por mais tempo',
+    title: 'Duração de 5 a 10 vezes mais que convencionais',
+    description: 'Longa vida útil dos abrasivos cerâmicos',
     icon: Clock,
     color: 'text-blue-600'
   },
@@ -44,6 +44,12 @@ const benefits = [
     description: 'Performance superior nos processos',
     icon: Scissors,
     color: 'text-orange-600'
+  },
+  {
+    title: 'Redução de 30 a 50% no tempo de trabalho',
+    description: 'Muito mais eficiente que abrasivos plásticos',
+    icon: Zap,
+    color: 'text-yellow-600'
   },
   {
     title: 'Preços especiais para revendedores',
@@ -56,6 +62,24 @@ const benefits = [
     description: 'Perfeito para peças metálicas e plásticas',
     icon: Award,
     color: 'text-red-600'
+  }
+];
+
+const applications = [
+  {
+    title: 'Para Quê Servem?',
+    description: 'Utilizados para o Vibroacabamento ou Tamboreamento de peças metálicas ou plásticas, em máquinas vibratórias ou sistemas de tamboreamento em geral, também conhecidos como Rebarbação e Polimento.',
+    result: 'Resultando em melhor Qualidade e Aparência Final nas peças enviadas aos clientes. Gerando maior Lucratividade e reduzindo em até 80% o custo em acabamento final das peças.'
+  },
+  {
+    title: 'Características',
+    description: 'Possuem uma alta capacidade de corte e de desgaste das peças, possibilitando uma Rebarbação ou Polimento eficientes com tempo de trabalho reduzido.',
+    result: 'Porém com longa vida útil dos abrasivos. Excelente relação Custo x Benefício.'
+  },
+  {
+    title: 'Custos x Lucratividade',
+    description: 'Os Abrasivos Cerâmicos podem reduzir o tempo de trabalho nos sistemas de Vibroacabamento ou Tamboreamento em 30 a 50%, ou mais, se comparados aos Abrasivos Plásticos ou Chips Plásticos convencionais.',
+    result: 'Chegando a durar de 5 a 10 vezes mais. Podendo também ser utilizados em Máquinas Turbo, reduzindo os tempos de trabalho em Incríveis 80%!'
   }
 ];
 
@@ -92,6 +116,27 @@ const Services = () => {
               <p className="text-neutral-600">{service.description}</p>
             </div>
           ))}
+        </div>
+
+        {/* Applications Section */}
+        <div className="bg-white rounded-xl p-8 shadow-sm border border-neutral-200 mb-12">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl md:text-3xl font-semibold text-neutral-900 mb-4">
+              Aplicações e Características dos Abrasivos Cerâmicos
+            </h3>
+            <p className="text-neutral-600">Entenda como nossos produtos podem revolucionar seus processos</p>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {applications.map((app, index) => (
+              <div key={index} className="p-6 rounded-lg border border-neutral-200 hover:bg-neutral-50 transition-colors">
+                <h4 className="font-bold text-neutral-900 mb-4 text-lg">{app.title}</h4>
+                <p className="text-neutral-600 mb-4 text-sm leading-relaxed">{app.description}</p>
+                <div className="p-4 bg-neutral-50 rounded-lg">
+                  <p className="text-neutral-700 text-sm font-medium">{app.result}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Benefits Section */}

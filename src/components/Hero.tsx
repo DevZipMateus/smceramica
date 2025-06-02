@@ -26,30 +26,35 @@ const Hero = () => {
           <h1 className={`${isMobile ? 'text-2xl' : 'text-3xl md:text-4xl lg:text-5xl'} font-bold text-neutral-900 leading-tight mb-6 animate-fade-in`} style={{
             animationDelay: '0.1s'
           }}>
-            Santa Maria Indústria de Abrasivos Cerâmicos
+            Abrasivos Cerâmicos Brasil
           </h1>
           
           <h2 className="text-lg md:text-xl text-neutral-700 mb-4 animate-fade-in" style={{
             animationDelay: '0.2s'
           }}>
-            Abrasivos Cerâmicos para Vibroacabamento e Tamboreamento
+            Abrasivos Cerâmicos e Porcelanas Alumina de Alta Qualidade para Vibroacabamento e Tamboreamento
           </h2>
           
           <p className="text-base md:text-lg text-neutral-600 mb-4 max-w-3xl mx-auto animate-fade-in font-semibold" style={{
             animationDelay: '0.3s'
           }}>
-            Compre direto de quem fabrica há mais de 30 anos, diminuindo custos de produção.
+            Mais de 30 Anos de Experiência no Mercado. Fabricamos um dos Melhores Abrasivos do Mercado em relação a Custo Benefício e Qualidade de Acabamento.
           </p>
           
-          <p className="text-base md:text-lg text-neutral-600 mb-10 max-w-3xl mx-auto animate-fade-in" style={{
+          <p className="text-base md:text-lg text-neutral-600 mb-6 max-w-3xl mx-auto animate-fade-in" style={{
             animationDelay: '0.35s'
           }}>
-            Abrasivos Cerâmicos e Porcelanas Alumina de alta qualidade para Vibroacabamento e Tamboreamento. 
-            Direto da fábrica com preços acessíveis.
+            Diretamente do Fabricante a Preços Acessíveis. Preços Especiais para Distribuidores e Revendedores.
+          </p>
+
+          <p className="text-lg md:text-xl text-neutral-800 mb-10 max-w-3xl mx-auto animate-fade-in font-bold" style={{
+            animationDelay: '0.4s'
+          }}>
+            Diminua até 30% seus custos de Produção comprando diretamente de quem fabrica.
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in" style={{
-            animationDelay: '0.4s'
+            animationDelay: '0.45s'
           }}>
             <a 
               href="https://wa.me/5511968209575" 
