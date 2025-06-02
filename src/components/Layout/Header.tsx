@@ -39,15 +39,22 @@ const Header = () => {
               <Mail size={16} className="mr-2" />
               rogerio.catelan@hotmail.com
             </a>
-            <a href="tel:+5511968209575" className="flex items-center hover:text-neutral-800 transition-colors duration-300 whitespace-nowrap">
-              <Phone size={16} className="mr-2" />
-              (11) 96820-9575
-            </a>
+            <div className="flex flex-col md:flex-row md:space-x-4 items-center">
+              <a href="tel:+5511968209575" className="flex items-center hover:text-neutral-800 transition-colors duration-300 whitespace-nowrap">
+                <Phone size={16} className="mr-2" />
+                (11) 96820-9575
+              </a>
+              <span className="hidden md:inline text-neutral-400">|</span>
+              <a href="tel:+551140431840" className="flex items-center hover:text-neutral-800 transition-colors duration-300 whitespace-nowrap">
+                <Phone size={16} className="mr-2" />
+                (11) 4043-1840
+              </a>
+            </div>
           </div>
           
           {/* Address */}
           <div className="text-sm text-neutral-600 text-center md:text-right">
-            Rua Moema, 54 - V. Conceição, Diadema - SP
+            Rua Moema, 54, Vila Conceição, Diadema - SP
           </div>
         </div>
         
@@ -57,7 +64,7 @@ const Header = () => {
           <Link to="/" className="flex items-center transition-all duration-300 transform hover:scale-[1.02]">
             <img 
               src="/lovable-uploads/03b6ed5b-4d32-4382-b318-479213e8a8c4.png" 
-              alt="Santa Maria Indústria de Abrasivos Cerâmicos" 
+              alt="Santa Maria Indústria de Abrasivos Cerâmicos - Fabricante de abrasivos cerâmicos para tamboreamento e vibroacabamento" 
               className="h-12 md:h-16 w-auto"
             />
           </Link>
@@ -74,6 +81,7 @@ const Header = () => {
           <button 
             className="md:hidden text-neutral-600 hover:text-neutral-800 focus:outline-none"
             onClick={toggleMobileMenu}
+            aria-label="Abrir menu de navegação"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>

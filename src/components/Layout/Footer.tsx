@@ -15,9 +15,9 @@ const Footer = () => {
                 alt="Santa Maria Indústria de Abrasivos Cerâmicos" 
                 className="h-16 w-auto mb-4 brightness-0 invert"
               />
-              <h3 className="text-xl font-semibold mb-2">Santa Maria Indústria</h3>
+              <h3 className="text-xl font-semibold mb-2">Santa Maria Indústria de Abrasivos Cerâmicos</h3>
               <p className="text-neutral-300 text-sm">
-                Abrasivos Cerâmicos para Vibroacabamento e Tamboreamento há mais de 20 anos.
+                Fabricação de Abrasivos Cerâmicos e Porcelanas para Tamboreamento e Vibroacabamento há mais de 30 anos.
               </p>
             </div>
           </div>
@@ -28,15 +28,21 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <Phone className="mr-3 mt-1 flex-shrink-0" size={18} />
-                <span>(11) 96820-9575</span>
+                <div>
+                  <p>Rogério Catelan: (11) 96820-9575</p>
+                  <p>Vendas - Elaine: (11) 4043-1840</p>
+                </div>
               </li>
               <li className="flex items-start">
                 <Mail className="mr-3 mt-1 flex-shrink-0" size={18} />
-                <span>rogerio.catelan@hotmail.com</span>
+                <div>
+                  <p>rogerio.catelan@hotmail.com</p>
+                  <p>cerstamaria@gmail.com</p>
+                </div>
               </li>
               <li className="flex items-start">
                 <MapPin className="mr-3 mt-1 flex-shrink-0" size={18} />
-                <span>Rua Moema, 54 - V. Conceição<br />Diadema - SP</span>
+                <span>Rua Moema, 54, Vila Conceição<br />Diadema - SP</span>
               </li>
             </ul>
           </div>
@@ -58,12 +64,19 @@ const Footer = () => {
                 <a href="#contact" className="hover:text-neutral-300 transition-colors duration-300 inline-block">Contato</a>
               </li>
             </ul>
+            <div className="mt-6">
+              <p className="text-sm text-neutral-400 mb-2">Palavras-chave:</p>
+              <p className="text-xs text-neutral-400">
+                Abrasivos cerâmicos, tamboreamento, vibroacabamento, porcelana alumina, 
+                fabricante abrasivos, mídia abrasiva, rebarbação e polimento, chips abrasivos
+              </p>
+            </div>
           </div>
         </div>
         
         {/* Copyright */}
         <div className="border-t border-neutral-700 mt-10 pt-6 text-center text-sm text-neutral-400">
-          <p>© {new Date().getFullYear()} Santa Maria Indústria de Abrasivos Cerâmicos. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} Todos os direitos reservados - Santa Maria Indústria de Abrasivos Cerâmicos</p>
         </div>
       </div>
     </footer>

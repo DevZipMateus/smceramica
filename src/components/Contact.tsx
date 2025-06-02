@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail, MapPin, User } from 'lucide-react';
 import { useIsMobile } from '../hooks/use-mobile';
 
 const Contact = () => {
@@ -18,12 +18,12 @@ const Contact = () => {
             Entre em contato conosco
           </h2>
           <p className="text-neutral-600 text-lg">
-            Fale diretamente com Rogério Catelan e solicite seu orçamento personalizado.
+            Fale diretamente com nossa equipe e solicite seu orçamento personalizado para abrasivos cerâmicos.
           </p>
         </div>
         
         {/* Contact Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-12">
           {/* WhatsApp Card */}
           <div className="bg-neutral-50 rounded-xl shadow-sm overflow-hidden animate-fade-in border border-neutral-200">
             <div className="bg-emerald-500 p-6 flex items-center justify-center">
@@ -35,78 +35,98 @@ const Contact = () => {
             </div>
             <div className="p-6 text-center">
               <h3 className="text-lg font-semibold text-neutral-900 mb-2">WhatsApp</h3>
-              <p className="text-neutral-600 mb-4">Atendimento rápido e prático</p>
+              <p className="text-neutral-600 mb-4 text-sm">Atendimento rápido</p>
               <a 
                 href="https://wa.me/5511968209575" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-neutral-900 hover:bg-neutral-800 text-white px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium"
+                className="bg-neutral-900 hover:bg-neutral-800 text-white px-4 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium text-sm"
+                aria-label="Enviar mensagem via WhatsApp"
               >
                 <span>Enviar mensagem</span>
               </a>
             </div>
           </div>
           
-          {/* Phone Card */}
+          {/* Phone Rogério Card */}
           <div className="bg-neutral-50 rounded-xl shadow-sm overflow-hidden animate-fade-in border border-neutral-200" style={{ animationDelay: '0.1s' }}>
             <div className="bg-neutral-800 p-6 flex items-center justify-center">
               <Phone className="w-16 h-16 text-white" />
             </div>
             <div className="p-6 text-center">
-              <h3 className="text-lg font-semibold text-neutral-900 mb-2">Telefone</h3>
-              <p className="text-neutral-600 mb-4">Fale diretamente conosco</p>
+              <h3 className="text-lg font-semibold text-neutral-900 mb-2">Rogério Catelan</h3>
+              <p className="text-neutral-600 mb-4 text-sm">Responsável</p>
               <a 
                 href="tel:+5511968209575"
-                className="bg-neutral-900 hover:bg-neutral-800 text-white px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium"
+                className="bg-neutral-900 hover:bg-neutral-800 text-white px-4 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium text-sm"
+                aria-label="Ligar para Rogério Catelan"
               >
                 <span>(11) 96820-9575</span>
               </a>
             </div>
           </div>
           
-          {/* Email Card */}
+          {/* Phone Vendas Card */}
           <div className="bg-neutral-50 rounded-xl shadow-sm overflow-hidden animate-fade-in border border-neutral-200" style={{ animationDelay: '0.2s' }}>
+            <div className="bg-neutral-700 p-6 flex items-center justify-center">
+              <User className="w-16 h-16 text-white" />
+            </div>
+            <div className="p-6 text-center">
+              <h3 className="text-lg font-semibold text-neutral-900 mb-2">Elaine - Vendas</h3>
+              <p className="text-neutral-600 mb-4 text-sm">Atendimento comercial</p>
+              <a 
+                href="tel:+551140431840"
+                className="bg-neutral-900 hover:bg-neutral-800 text-white px-4 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium text-sm"
+                aria-label="Ligar para vendas"
+              >
+                <span>(11) 4043-1840</span>
+              </a>
+            </div>
+          </div>
+          
+          {/* Email Card */}
+          <div className="bg-neutral-50 rounded-xl shadow-sm overflow-hidden animate-fade-in border border-neutral-200" style={{ animationDelay: '0.3s' }}>
             <div className="bg-neutral-600 p-6 flex items-center justify-center">
               <Mail className="w-16 h-16 text-white" />
             </div>
             <div className="p-6 text-center">
               <h3 className="text-lg font-semibold text-neutral-900 mb-2">E-mail</h3>
-              <p className="text-neutral-600 mb-4">Envie sua mensagem</p>
-              <a 
-                href="mailto:rogerio.catelan@hotmail.com"
-                className="bg-neutral-900 hover:bg-neutral-800 text-white px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium text-sm"
-              >
-                <span>rogerio.catelan@hotmail.com</span>
-              </a>
+              <p className="text-neutral-600 mb-4 text-sm">Envie sua mensagem</p>
+              <div className="space-y-2">
+                <a 
+                  href="mailto:rogerio.catelan@hotmail.com"
+                  className="bg-neutral-900 hover:bg-neutral-800 text-white px-3 py-1.5 rounded-md inline-flex items-center justify-center transition-all font-medium text-xs"
+                  aria-label="Enviar e-mail para Rogério"
+                >
+                  <span>rogerio.catelan@hotmail.com</span>
+                </a>
+                <a 
+                  href="mailto:cerstamaria@gmail.com"
+                  className="bg-neutral-700 hover:bg-neutral-600 text-white px-3 py-1.5 rounded-md inline-flex items-center justify-center transition-all font-medium text-xs"
+                  aria-label="Enviar e-mail para vendas"
+                >
+                  <span>cerstamaria@gmail.com</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
         
-        {/* Address and Hours Card */}
-        <div className="mt-12 bg-neutral-50 rounded-xl shadow-sm p-8 max-w-4xl mx-auto border border-neutral-200">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Address */}
-            <div className="flex items-start">
-              <div className="bg-white p-3 rounded-full mr-4 flex-shrink-0 shadow-sm">
-                <MapPin className="text-neutral-700" size={24} />
-              </div>
-              <div>
-                <h4 className="text-lg font-semibold text-neutral-900 mb-2">Endereço</h4>
-                <p className="text-neutral-600">Rua Moema, 54 - V. Conceição<br />Diadema - SP</p>
-              </div>
+        {/* Address Card */}
+        <div className="bg-neutral-50 rounded-xl shadow-sm p-8 max-w-4xl mx-auto border border-neutral-200">
+          <div className="flex items-start justify-center">
+            <div className="bg-white p-3 rounded-full mr-4 flex-shrink-0 shadow-sm">
+              <MapPin className="text-neutral-700" size={24} />
             </div>
-            
-            {/* Contact Person */}
-            <div className="flex items-start">
-              <div className="bg-white p-3 rounded-full mr-4 flex-shrink-0 shadow-sm">
-                <div className="w-6 h-6 bg-neutral-700 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xs font-bold">R</span>
-                </div>
-              </div>
-              <div>
-                <h4 className="text-lg font-semibold text-neutral-900 mb-2">Responsável</h4>
-                <p className="text-neutral-600">Rogério Catelan<br />Diretor Comercial</p>
-              </div>
+            <div className="text-center">
+              <h4 className="text-lg font-semibold text-neutral-900 mb-2">Endereço da Fábrica</h4>
+              <p className="text-neutral-600">
+                Rua Moema, 54, Vila Conceição<br />
+                Diadema - SP
+              </p>
+              <p className="text-neutral-500 text-sm mt-2">
+                Visite nossa fábrica e conheça nossos processos de produção
+              </p>
             </div>
           </div>
         </div>

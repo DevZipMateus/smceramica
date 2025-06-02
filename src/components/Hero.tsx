@@ -18,7 +18,7 @@ const Hero = () => {
           <div className="mb-8 animate-fade-in">
             <img 
               src="/lovable-uploads/03b6ed5b-4d32-4382-b318-479213e8a8c4.png" 
-              alt="Santa Maria Indústria de Abrasivos Cerâmicos" 
+              alt="Santa Maria Indústria de Abrasivos Cerâmicos - Fabricante de abrasivos cerâmicos para tamboreamento e vibroacabamento" 
               className="h-20 md:h-28 w-auto mx-auto mb-6"
             />
           </div>
@@ -32,14 +32,20 @@ const Hero = () => {
           <h2 className="text-lg md:text-xl text-neutral-700 mb-4 animate-fade-in" style={{
             animationDelay: '0.2s'
           }}>
-            Vibroacabamento e Tamboreamento
+            Abrasivos Cerâmicos para Vibroacabamento e Tamboreamento
           </h2>
           
-          <p className="text-base md:text-lg text-neutral-600 mb-10 max-w-3xl mx-auto animate-fade-in" style={{
+          <p className="text-base md:text-lg text-neutral-600 mb-4 max-w-3xl mx-auto animate-fade-in font-semibold" style={{
             animationDelay: '0.3s'
           }}>
-            Compre direto de quem fabrica há mais de 20 anos, diminuindo custos de produção. 
-            Especialistas em Abrasivos Cerâmicos e Porcelanas para Tamboreamento e Vibroacabamento.
+            Compre direto de quem fabrica há mais de 30 anos, diminuindo custos de produção.
+          </p>
+          
+          <p className="text-base md:text-lg text-neutral-600 mb-10 max-w-3xl mx-auto animate-fade-in" style={{
+            animationDelay: '0.35s'
+          }}>
+            Abrasivos Cerâmicos e Porcelanas Alumina de alta qualidade para Vibroacabamento e Tamboreamento. 
+            Direto da fábrica com preços acessíveis.
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in" style={{
@@ -50,12 +56,19 @@ const Hero = () => {
               target="_blank" 
               rel="noopener noreferrer" 
               className="bg-neutral-900 hover:bg-neutral-800 text-white px-6 py-3 rounded-md transition-all flex items-center justify-center gap-2 font-medium"
+              aria-label="Solicitar orçamento via WhatsApp"
             >
               <img src="/lovable-uploads/9a8edb27-0fd0-49ff-9165-64acf1186a7f.png" alt="WhatsApp" className="w-5 h-5" />
               <span>Solicitar Orçamento</span>
             </a>
-            <a href="#services" className="bg-white hover:bg-neutral-50 text-neutral-900 border border-neutral-300 px-6 py-3 rounded-md transition-all flex items-center justify-center gap-2 font-medium">
-              Nossos Produtos
+            <a 
+              href="https://wa.me/5511968209575" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="bg-white hover:bg-neutral-50 text-neutral-900 border border-neutral-300 px-6 py-3 rounded-md transition-all flex items-center justify-center gap-2 font-medium"
+              aria-label="Comprar direto da fábrica via WhatsApp"
+            >
+              Compre Direto da Fábrica
             </a>
           </div>
         </div>
