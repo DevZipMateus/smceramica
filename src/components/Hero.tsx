@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="absolute bottom-10 left-10 w-72 h-72 bg-neutral-300/20 rounded-full blur-3xl"></div>
       
       <div className="container-custom relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center py-[45px]">
           <div className="mb-8 animate-fade-in">
             
           </div>
