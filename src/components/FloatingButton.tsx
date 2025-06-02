@@ -70,7 +70,7 @@ const FloatingButton = () => {
           <X size={isMobile ? 18 : 22} />
         ) : (
           <div className={`${isMobile ? 'w-5 h-5' : 'w-6 h-6'}`}>
-            <img src="/lovable-uploads/9a8edb27-0fd0-49ff-9165-64acf1186a7f.png" alt="WhatsApp" className="w-full h-full object-contain" />
+            <img src="/lovable-uploads/1fa16bc1-908d-4a63-9c7f-88a25f117f80.png" alt="WhatsApp" className="w-full h-full object-contain" />
           </div>
         )}
       </button>

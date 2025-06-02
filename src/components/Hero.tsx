@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useIsMobile } from '../hooks/use-mobile';
 const Hero = () => {
@@ -49,7 +50,7 @@ const Hero = () => {
           animationDelay: '0.45s'
         }}>
             <a href="https://wa.me/5511968209575" target="_blank" rel="noopener noreferrer" className="bg-neutral-900 hover:bg-neutral-800 text-white px-6 py-3 rounded-md transition-all flex items-center justify-center gap-2 font-medium" aria-label="Solicitar orçamento via WhatsApp">
-              <img src="/lovable-uploads/9a8edb27-0fd0-49ff-9165-64acf1186a7f.png" alt="WhatsApp" className="w-5 h-5" />
+              <img src="/lovable-uploads/1fa16bc1-908d-4a63-9c7f-88a25f117f80.png" alt="WhatsApp" className="w-5 h-5" />
               <span>Solicitar Orçamento</span>
             </a>
             <a href="https://wa.me/5511968209575" target="_blank" rel="noopener noreferrer" className="bg-white hover:bg-neutral-50 text-neutral-900 border border-neutral-300 px-6 py-3 rounded-md transition-all flex items-center justify-center gap-2 font-medium" aria-label="Comprar direto da fábrica via WhatsApp">
