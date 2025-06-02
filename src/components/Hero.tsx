@@ -1,12 +1,8 @@
-
 import React from 'react';
 import { useIsMobile } from '../hooks/use-mobile';
-
 const Hero = () => {
   const isMobile = useIsMobile();
-  
-  return (
-    <section className="pt-32 pb-12 md:pt-40 md:pb-20 bg-gradient-to-br from-white to-neutral-50 relative overflow-hidden">
+  return <section className="pt-32 pb-12 md:pt-40 md:pb-20 bg-gradient-to-br from-white to-neutral-50 relative overflow-hidden">
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3')] bg-cover bg-center opacity-5"></div>
       
       {/* Decorative elements */}
@@ -16,63 +12,47 @@ const Hero = () => {
       <div className="container-custom relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8 animate-fade-in">
-            <img 
-              src="/lovable-uploads/03b6ed5b-4d32-4382-b318-479213e8a8c4.png" 
-              alt="Santa Maria Indústria de Abrasivos Cerâmicos - Fabricante de abrasivos cerâmicos para tamboreamento e vibroacabamento" 
-              className="h-20 md:h-28 w-auto mx-auto mb-6"
-            />
+            
           </div>
           
           <h1 className={`${isMobile ? 'text-2xl' : 'text-3xl md:text-4xl lg:text-5xl'} font-bold text-neutral-900 leading-tight mb-6 animate-fade-in`} style={{
-            animationDelay: '0.1s'
-          }}>
+          animationDelay: '0.1s'
+        }}>
             Abrasivos Cerâmicos Brasil
           </h1>
           
           <h2 className="text-lg md:text-xl text-neutral-700 mb-4 animate-fade-in" style={{
-            animationDelay: '0.2s'
-          }}>
+          animationDelay: '0.2s'
+        }}>
             Abrasivos Cerâmicos e Porcelanas Alumina de Alta Qualidade para Vibroacabamento e Tamboreamento
           </h2>
           
           <p className="text-base md:text-lg text-neutral-600 mb-4 max-w-3xl mx-auto animate-fade-in font-semibold" style={{
-            animationDelay: '0.3s'
-          }}>
+          animationDelay: '0.3s'
+        }}>
             Mais de 30 Anos de Experiência no Mercado. Fabricamos um dos Melhores Abrasivos do Mercado em relação a Custo Benefício e Qualidade de Acabamento.
           </p>
           
           <p className="text-base md:text-lg text-neutral-600 mb-6 max-w-3xl mx-auto animate-fade-in" style={{
-            animationDelay: '0.35s'
-          }}>
+          animationDelay: '0.35s'
+        }}>
             Diretamente do Fabricante a Preços Acessíveis. Preços Especiais para Distribuidores e Revendedores.
           </p>
 
           <p className="text-lg md:text-xl text-neutral-800 mb-10 max-w-3xl mx-auto animate-fade-in font-bold" style={{
-            animationDelay: '0.4s'
-          }}>
+          animationDelay: '0.4s'
+        }}>
             Diminua até 30% seus custos de Produção comprando diretamente de quem fabrica.
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in" style={{
-            animationDelay: '0.45s'
-          }}>
-            <a 
-              href="https://wa.me/5511968209575" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="bg-neutral-900 hover:bg-neutral-800 text-white px-6 py-3 rounded-md transition-all flex items-center justify-center gap-2 font-medium"
-              aria-label="Solicitar orçamento via WhatsApp"
-            >
+          animationDelay: '0.45s'
+        }}>
+            <a href="https://wa.me/5511968209575" target="_blank" rel="noopener noreferrer" className="bg-neutral-900 hover:bg-neutral-800 text-white px-6 py-3 rounded-md transition-all flex items-center justify-center gap-2 font-medium" aria-label="Solicitar orçamento via WhatsApp">
               <img src="/lovable-uploads/9a8edb27-0fd0-49ff-9165-64acf1186a7f.png" alt="WhatsApp" className="w-5 h-5" />
               <span>Solicitar Orçamento</span>
             </a>
-            <a 
-              href="https://wa.me/5511968209575" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="bg-white hover:bg-neutral-50 text-neutral-900 border border-neutral-300 px-6 py-3 rounded-md transition-all flex items-center justify-center gap-2 font-medium"
-              aria-label="Comprar direto da fábrica via WhatsApp"
-            >
+            <a href="https://wa.me/5511968209575" target="_blank" rel="noopener noreferrer" className="bg-white hover:bg-neutral-50 text-neutral-900 border border-neutral-300 px-6 py-3 rounded-md transition-all flex items-center justify-center gap-2 font-medium" aria-label="Comprar direto da fábrica via WhatsApp">
               Compre Direto da Fábrica
             </a>
           </div>
@@ -86,8 +66,6 @@ const Hero = () => {
           </path>
         </svg>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
