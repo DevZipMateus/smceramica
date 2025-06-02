@@ -1,20 +1,13 @@
-
 import React from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
-
 const Footer = () => {
-  return (
-    <footer className="bg-neutral-900 text-white">
+  return <footer className="bg-neutral-900 text-white">
       <div className="container-custom py-8 md:py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Company Information */}
           <div className="animate-fade-in col-span-1 lg:col-span-1">
             <div className="mb-6">
-              <img 
-                src="/lovable-uploads/03b6ed5b-4d32-4382-b318-479213e8a8c4.png" 
-                alt="Santa Maria Indústria de Abrasivos Cerâmicos" 
-                className="h-12 md:h-16 w-auto mb-4 brightness-0 invert"
-              />
+              <img alt="Santa Maria Indústria de Abrasivos Cerâmicos" className="h-12 md:h-16 w-auto mb-4 brightness-0 invert" src="/lovable-uploads/b8de55e5-75df-4f0c-a96a-dd12a4f3b52d.png" />
               <h3 className="text-lg md:text-xl font-semibold mb-3">Santa Maria Indústria de Abrasivos Cerâmicos</h3>
               <p className="text-neutral-300 text-sm leading-relaxed">
                 Fabricação de Abrasivos Cerâmicos e Porcelanas para Tamboreamento e Vibroacabamento há mais de 30 anos.
@@ -23,7 +16,9 @@ const Footer = () => {
           </div>
           
           {/* Contact Information */}
-          <div className="animate-fade-in col-span-1" style={{ animationDelay: '0.1s' }}>
+          <div className="animate-fade-in col-span-1" style={{
+          animationDelay: '0.1s'
+        }}>
             <h3 className="text-lg md:text-xl font-semibold mb-4 md:mb-6">Contato</h3>
             <div className="space-y-3 md:space-y-4">
               <div className="flex items-start">
@@ -48,7 +43,9 @@ const Footer = () => {
           </div>
           
           {/* Quick Links */}
-          <div className="animate-fade-in col-span-1 md:col-span-2 lg:col-span-1" style={{ animationDelay: '0.2s' }}>
+          <div className="animate-fade-in col-span-1 md:col-span-2 lg:col-span-1" style={{
+          animationDelay: '0.2s'
+        }}>
             <h3 className="text-lg md:text-xl font-semibold mb-4 md:mb-6">Links Rápidos</h3>
             <ul className="space-y-2 md:space-y-3 mb-6">
               <li>
@@ -81,8 +78,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
