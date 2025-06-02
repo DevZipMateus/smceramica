@@ -7,7 +7,7 @@ const Footer = () => {
           {/* Company Information */}
           <div className="animate-fade-in col-span-1 lg:col-span-1">
             <div className="mb-6">
-              <img alt="Santa Maria Indústria de Abrasivos Cerâmicos" className="h-12 md:h-16 w-auto mb-4 brightness-0 invert" src="/lovable-uploads/b8de55e5-75df-4f0c-a96a-dd12a4f3b52d.png" />
+              <img alt="Santa Maria Indústria de Abrasivos Cerâmicos" className="h-12 md:h-16 w-auto mb-4" src="/lovable-uploads/b8de55e5-75df-4f0c-a96a-dd12a4f3b52d.png" />
               <h3 className="text-lg md:text-xl font-semibold mb-3">Santa Maria Indústria de Abrasivos Cerâmicos</h3>
               <p className="text-neutral-300 text-sm leading-relaxed">
                 Fabricação de Abrasivos Cerâmicos e Porcelanas para Tamboreamento e Vibroacabamento há mais de 30 anos.
