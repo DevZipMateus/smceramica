@@ -118,18 +118,18 @@
   
   /* Container para garantir responsividade */
   .container-custom {
-    @apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+    @apply container mx-auto px-3 sm:px-4 md:px-6 lg:px-8 max-w-7xl;
     max-width: 100vw;
     overflow-x: hidden;
   }
   
   /* Buttons with hover effect */
   .btn-primary {
-    @apply bg-neutral-900 hover:bg-neutral-800 text-white px-6 py-3 rounded-md transition-all duration-300 transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-neutral-500/50 shadow-sm;
+    @apply bg-neutral-900 hover:bg-neutral-800 text-white px-4 md:px-6 py-2 md:py-3 rounded-md transition-all duration-300 transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-neutral-500/50 shadow-sm text-sm md:text-base;
   }
   
   .btn-secondary {
-    @apply bg-white hover:bg-neutral-50 text-neutral-900 border border-neutral-300 px-6 py-3 rounded-md transition-all duration-300 transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-neutral-500/50 shadow-sm;
+    @apply bg-white hover:bg-neutral-50 text-neutral-900 border border-neutral-300 px-4 md:px-6 py-2 md:py-3 rounded-md transition-all duration-300 transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-neutral-500/50 shadow-sm text-sm md:text-base;
   }
   
   /* Card hover effects */
@@ -139,7 +139,7 @@
   
   /* Section styling */
   .section {
-    @apply py-12 md:py-20;
+    @apply py-8 md:py-12 lg:py-20;
     width: 100%;
     overflow-x: hidden;
   }
@@ -156,11 +156,11 @@
   
   /* Plan cards */
   .plan-card {
-    @apply bg-white rounded-xl p-6 md:p-8 shadow-sm transition-all duration-300 hover:shadow-md border border-neutral-200;
+    @apply bg-white rounded-xl p-4 md:p-6 lg:p-8 shadow-sm transition-all duration-300 hover:shadow-md border border-neutral-200;
   }
   
   .plan-card-popular {
-    @apply bg-gradient-to-br from-white to-neutral-50 rounded-xl p-6 md:p-8 shadow-md transition-all duration-300 hover:shadow-lg border border-neutral-300 relative;
+    @apply bg-gradient-to-br from-white to-neutral-50 rounded-xl p-4 md:p-6 lg:p-8 shadow-md transition-all duration-300 hover:shadow-lg border border-neutral-300 relative;
   }
   
   /* Feature list */
@@ -202,15 +202,41 @@
   * {
     box-sizing: border-box;
   }
+
+  /* Melhorias específicas para mobile */
+  @media (max-width: 768px) {
+    .animate-float {
+      display: none; /* Remove elemento flutuante em mobile para evitar problemas de layout */
+    }
+  }
 }
 
 /* Media queries para responsividade extra */
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   .container-custom {
     @apply px-3;
   }
   
   body {
     overflow-x: hidden;
+  }
+
+  /* Ajustes específicos para textos em mobile */
+  h1 {
+    @apply text-xl;
+  }
+  
+  h2 {
+    @apply text-lg;
+  }
+  
+  h3 {
+    @apply text-base;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-custom {
+    @apply px-2;
   }
 }
