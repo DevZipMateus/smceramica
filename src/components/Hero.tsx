@@ -4,7 +4,7 @@ import { useIsMobile } from '../hooks/use-mobile';
 const Hero = () => {
   const isMobile = useIsMobile();
   return <section className="pt-32 pb-12 md:pt-40 md:pb-20 bg-gradient-to-br from-white to-neutral-50 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3')] bg-cover bg-center opacity-5"></div>
+      <div className="absolute inset-0 bg-[url('/lovable-uploads/4aa030f6-f9a2-4c21-87f7-fd067d79027c.png')] bg-cover bg-center opacity-5"></div>
       
       {/* Decorative elements */}
       <div className="absolute top-40 right-10 w-72 h-72 bg-neutral-200/30 rounded-full blur-3xl"></div>
