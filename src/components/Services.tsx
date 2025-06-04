@@ -30,38 +30,32 @@ const benefits = [
   {
     title: 'Redução de até 80% no custo de acabamento',
     description: 'Economia significativa nos custos de produção',
-    icon: TrendingDown,
-    color: 'text-green-600'
+    icon: TrendingDown
   },
   {
     title: 'Duração de 5 a 10 vezes mais que convencionais',
     description: 'Longa vida útil dos abrasivos cerâmicos',
-    icon: Clock,
-    color: 'text-blue-600'
+    icon: Clock
   },
   {
     title: 'Alta capacidade de corte e desgaste',
     description: 'Performance superior nos processos',
-    icon: Scissors,
-    color: 'text-orange-600'
+    icon: Scissors
   },
   {
     title: 'Redução de 30 a 50% no tempo de trabalho',
     description: 'Muito mais eficiente que abrasivos plásticos',
-    icon: Zap,
-    color: 'text-yellow-600'
+    icon: Zap
   },
   {
     title: 'Preços especiais para revendedores',
     description: 'Condições diferenciadas para distribuidores',
-    icon: DollarSign,
-    color: 'text-purple-600'
+    icon: DollarSign
   },
   {
     title: 'Ideal para rebarbação e polimento',
     description: 'Perfeito para peças metálicas e plásticas',
-    icon: Award,
-    color: 'text-red-600'
+    icon: Award
   }
 ];
 
@@ -139,26 +133,30 @@ const Services = () => {
           </div>
         </div>
 
-        {/* Benefits Section */}
-        <div className="bg-white rounded-xl p-8 shadow-sm border border-neutral-200 mb-12">
-          <div className="text-center mb-8">
-            <h3 className="text-2xl md:text-3xl font-semibold text-neutral-900 mb-4">
-              Benefícios dos Nossos Abrasivos Cerâmicos
-            </h3>
-            <p className="text-neutral-600">Vantagens comprovadas que fazem a diferença na sua produção</p>
+        {/* Benefits Section - Redesigned */}
+        <div className="bg-white rounded-xl shadow-sm border border-neutral-200 mb-12 overflow-hidden">
+          <div className="bg-gradient-to-r from-neutral-50 to-neutral-100 px-8 py-6 border-b border-neutral-200">
+            <div className="text-center">
+              <h3 className="text-2xl md:text-3xl font-semibold text-neutral-900 mb-2">
+                Benefícios dos Nossos Abrasivos Cerâmicos
+              </h3>
+              <p className="text-neutral-600">Vantagens comprovadas que fazem a diferença na sua produção</p>
+            </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {benefits.map((benefit, index) => (
-              <div key={index} className="flex items-start p-4 rounded-lg hover:bg-neutral-50 transition-colors">
-                <div className={`p-3 rounded-full mr-4 flex-shrink-0 ${benefit.color} bg-neutral-100`}>
-                  <benefit.icon size={24} />
+          <div className="p-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {benefits.map((benefit, index) => (
+                <div key={index} className="flex items-start p-6 rounded-lg border border-neutral-100 hover:border-neutral-200 hover:shadow-sm transition-all duration-200">
+                  <div className="bg-neutral-100 p-3 rounded-lg mr-4 flex-shrink-0">
+                    <benefit.icon size={20} className="text-neutral-700" />
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-neutral-900 mb-2 text-base leading-tight">{benefit.title}</h4>
+                    <p className="text-neutral-600 text-sm leading-relaxed">{benefit.description}</p>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="font-semibold text-neutral-900 mb-2 text-sm">{benefit.title}</h4>
-                  <p className="text-neutral-600 text-sm">{benefit.description}</p>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
 
