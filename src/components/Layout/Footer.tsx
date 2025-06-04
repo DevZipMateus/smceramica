@@ -61,13 +61,7 @@ const Footer = () => {
                 <a href="#contact" className="hover:text-neutral-300 transition-colors duration-300 inline-block text-sm">Contato</a>
               </li>
             </ul>
-            <div>
-              <p className="text-xs text-neutral-400 mb-2">Palavras-chave:</p>
-              <p className="text-xs text-neutral-400 leading-relaxed">
-                Abrasivos cerâmicos, tamboreamento, vibroacabamento, porcelana alumina, 
-                fabricante abrasivos, mídia abrasiva, rebarbação e polimento, chips abrasivos
-              </p>
-            </div>
+            
           </div>
         </div>
         
