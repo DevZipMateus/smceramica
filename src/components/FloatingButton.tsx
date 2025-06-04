@@ -54,22 +54,22 @@ const FloatingButton = () => {
       {/* Main Button */}
       <button
         onClick={toggleMenu}
-        className={`${isMobile ? 'p-3' : 'p-4'} rounded-full flex items-center justify-center transition-all duration-300 
-          ${isOpen ? 'bg-red-500 hover:bg-red-600' : 'bg-neutral-800 hover:bg-neutral-700'} 
+        className={`${isMobile ? 'p-2' : 'p-3'} rounded-full flex items-center justify-center transition-all duration-300 
+          ${isOpen ? 'bg-red-500 hover:bg-red-600' : 'bg-transparent hover:bg-white/10'} 
           ${isOpen ? 'text-white' : 'text-white'} 
           ${isPulsing && !isOpen ? 'animate-pulse' : ''}
-          transform hover:scale-105 active:scale-95 shadow-lg`}
+          transform hover:scale-105 active:scale-95`}
         aria-label={isOpen ? "Fechar menu de contato" : "Abrir menu de contato"}
         style={{
           boxShadow: isOpen 
             ? '0 4px 12px rgba(239, 68, 68, 0.4)' 
-            : '0 4px 12px rgba(64, 64, 64, 0.4)'
+            : '0 4px 12px rgba(0, 0, 0, 0.1)'
         }}
       >
         {isOpen ? (
           <X size={isMobile ? 18 : 22} />
         ) : (
-          <div className={`${isMobile ? 'w-5 h-5' : 'w-6 h-6'}`}>
+          <div className={`${isMobile ? 'w-10 h-10' : 'w-12 h-12'}`}>
             <img src="/lovable-uploads/1fa16bc1-908d-4a63-9c7f-88a25f117f80.png" alt="WhatsApp" className="w-full h-full object-contain" />
           </div>
         )}
