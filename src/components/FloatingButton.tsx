@@ -54,8 +54,8 @@ const FloatingButton = () => {
       {/* Main Button */}
       <button
         onClick={toggleMenu}
-        className={`${isMobile ? 'p-2' : 'p-3'} rounded-full flex items-center justify-center transition-all duration-300 
-          ${isOpen ? 'bg-red-500 hover:bg-red-600' : 'bg-transparent hover:bg-white/10'} 
+        className={`${isMobile ? 'p-0' : 'p-0'} flex items-center justify-center transition-all duration-300 
+          ${isOpen ? 'bg-red-500 hover:bg-red-600 rounded-full p-2' : 'bg-transparent'} 
           ${isOpen ? 'text-white' : 'text-white'} 
           ${isPulsing && !isOpen ? 'animate-pulse' : ''}
           transform hover:scale-105 active:scale-95`}
@@ -63,7 +63,7 @@ const FloatingButton = () => {
         style={{
           boxShadow: isOpen 
             ? '0 4px 12px rgba(239, 68, 68, 0.4)' 
-            : '0 4px 12px rgba(0, 0, 0, 0.1)'
+            : 'none'
         }}
       >
         {isOpen ? (
